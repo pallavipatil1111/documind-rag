@@ -1,0 +1,23 @@
+# Render blueprint for the backend: New > Blueprint > pick this repo, then fill in the secret keys.
+services:
+  - type: web
+    name: documind-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: anthropic
+      - key: EMBEDDING_PROVIDER
+        value: openai
+      - key: VECTOR_STORE
+        value: pinecone
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

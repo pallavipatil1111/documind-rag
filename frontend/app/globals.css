@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-face), ui-monospace, monospace;
+  --color-accent: oklch(0.52 0.19 275);
+  --color-accent-soft: oklch(0.95 0.03 275);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: oklch(0.72 0.14 275);
+    --color-accent-soft: oklch(0.3 0.06 275);
+  }
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+[hidden] { display: none !important; }

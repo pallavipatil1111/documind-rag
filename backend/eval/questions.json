@@ -1,0 +1,33 @@
+{
+  "document": "sample_docs/aurora_handbook.pdf",
+  "notes": "Each answerable question lists an evidence phrase that must appear in a retrieved chunk for retrieval to count as a hit, and the page it is on. Unanswerable questions check that the assistant says it couldn't find the answer instead of guessing.",
+  "questions": [
+    {"q": "How many days of paid annual leave do employees get?", "evidence": "24 days of paid annual leave", "page": 2},
+    {"q": "Can I carry unused leave over to next year?", "evidence": "Up to 8 unused leave days can be carried over", "page": 2},
+    {"q": "When do I need a medical certificate for sick leave?", "evidence": "more than 2 consecutive days", "page": 2},
+    {"q": "How long is parental leave for the primary caregiver?", "evidence": "26 weeks for the primary caregiver", "page": 2},
+    {"q": "How far in advance must a week-long leave request be approved?", "evidence": "at least 2 weeks in advance", "page": 2},
+    {"q": "How many days a week can I work from home?", "evidence": "up to 3 days a week", "page": 3},
+    {"q": "What laptop do engineers get?", "evidence": "Engineers get a 16 GB laptop", "page": 3},
+    {"q": "What is the home office allowance?", "evidence": "home-office allowance of Rs 15,000", "page": 3},
+    {"q": "Is my internet bill reimbursed?", "evidence": "Internet costs are reimbursed up to Rs 1,000 a month", "page": 3},
+    {"q": "When is salary paid?", "evidence": "last working day of each month", "page": 4},
+    {"q": "Who approves an expense of Rs 5,000?", "evidence": "anything above Rs 2,000 also needs approval from finance", "page": 4},
+    {"q": "What is the hotel limit in metro cities?", "evidence": "Rs 6,500 a night in metro cities", "page": 4},
+    {"q": "What is the daily meal allowance when travelling?", "evidence": "daily meal allowance on trips is Rs 1,200", "page": 4},
+    {"q": "When do salary revisions take effect?", "evidence": "take effect from 1 July", "page": 4},
+    {"q": "How much is the yearly learning budget?", "evidence": "learning budget of Rs 40,000", "page": 5},
+    {"q": "What is Build Friday?", "evidence": "We call this Build Friday", "page": 5},
+    {"q": "How long is the probation period?", "evidence": "probation period is 6 months", "page": 5},
+    {"q": "When can I move to another team internally?", "evidence": "after 12 months in a role", "page": 5},
+    {"q": "What should I do if my laptop is stolen?", "evidence": "within 1 hour so it can be locked remotely", "page": 6},
+    {"q": "Can I copy patient data to my laptop?", "evidence": "must never be copied to laptops", "page": 6},
+    {"q": "What are the core collaboration hours?", "evidence": "11:00 to 16:00 IST", "page": 1},
+    {"q": "Where are the company's offices?", "evidence": "offices in Pune and Hyderabad", "page": 1}
+  ],
+  "unanswerable": [
+    "What is the company's stock option vesting schedule?",
+    "Does Aurora Labs provide free lunch in the office?",
+    "Who is the CEO of Aurora Labs?"
+  ]
+}
