@@ -30,7 +30,7 @@ class ApiTest(unittest.TestCase):
         self.assertEqual(doc["pages"], 6)
         self.assertEqual(self.client.get("/api/documents").json()[0]["id"], doc["id"])
 
-        answer = self.client.post("/api/ask", json={"question": "How long is the probation period?"}).json()
+        answer = self.client.post("/api/ask", json={"question": "What is the probation period for new joiners?"}).json()
         self.assertIn("[1]", answer["answer"])
         self.assertEqual(answer["sources"][0]["page"], 5)
 
